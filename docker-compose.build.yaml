@@ -1,0 +1,9 @@
+services:
+  tauri:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: build
+
+    volumes:
+      - ./release:/app/src-tauri/target/release/
